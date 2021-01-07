@@ -1,0 +1,57 @@
+/*animation... idk if I want to use*/
+/*@keyframes color-shift {
+		0% {
+			filter: invert(0.5) sepia(1) saturate(5) hue-rotate(100deg);
+			timing-function: ease;
+		}
+		50% {
+			filter: invert(0.5) sepia(1) saturate(5) hue-rotate(180deg);
+			timing-function: ease;
+		}
+		100% {
+			filter: invert(0.5) sepia(1) saturate(5) hue-rotate(100deg);
+			timing-function: ease;
+		}
+	}*/
+
+/*fixes / global*/
+* {
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-size: 1.5rem;
+}
+
+/*positioning*/
+.horoscope {
+	width: 70%;
+	margin: 0 auto;
+	border: 2px solid green;
+	text-align: center;
+	overflow: auto;
+}
+
+/*style*/
+body {
+	/*color: magenta;*/
+}
+
+img {
+	border: 2px solid orange;
+	width: 50%;
+	/*animation: 10s color-shift infinite;*/
+}
+
+/*actions*/
+
+.hide {
+	display: none;
+}
+
+/*media queries*/
+
