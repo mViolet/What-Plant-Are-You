@@ -18,33 +18,147 @@
 * {
 	box-sizing: border-box;
 }
+ :root {
+ 	--grey:  hsla(16, 15%, 90%, 1);
+ 	--accent: hsla(162, 62%, 51%, 1);
+ 	--background: #ffffff;
+ }
+
+/*FONTS*/
+/*	font-family: 'Beth Ellen', cursive;
+	font-family: 'Meddon', cursive;
+	font-family: 'UnifrakturCook', cursive;
+	font-family: 'UnifrakturMaguntia', cursive;*/
 
 html{
 	font-size: 62.5%;
 }
 
-body{
+body, header h2{
+	margin: 0;
 	font-size: 1.5rem;
+	font-family: 'Beth Ellen', cursive;
 }
 
 /*positioning*/
+main{
+	/*border: 2px solid orange;*/
+}
 .horoscope {
 	width: 70%;
-	margin: 0 auto;
-	border: 2px solid green;
+	margin: 20px auto;
 	text-align: center;
-	overflow: auto;
+	/*border: 2px solid blue;*/
 }
 
+ul{
+	height: 100%;
+}
+
+ul *{
+	display: inline-block;
+}
+
+li{
+	/*border: 2px solid green;*/
+}
+
+header{
+	display: table;
+	width: 100%;
+}
+
+header,
+footer, 
+.horoscope{
+	/*border: 2px solid magenta;*/
+}
+
+header,
+footer{
+	height: 10vh;
+	/*border: 2px solid limegreen;*/
+}
+
+footer{
+	height: 5rem;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 2rem;
+	border-top-left-radius: 10px;
+}
+
+nav h2 {
+	width: 60%;
+	/*border: 2px solid blue;*/
+	margin: 0;
+}
+
+header *{
+	padding: 10px 5px;
+	margin: 0;
+}
+
+nav li {
+	/*border: 2px solid black;*/
+	width: 15%;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
 /*style*/
+
+p, h2, footer, li {
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	padding: 0 50px 40px 50px;
+	line-height: 2.5rem;
+}
+
+body {
+	background: var(--grey);
+}
+header, footer{
+	background: var(--accent);
+	color: white;
+}
+
+.horoscope {
+	background: var(--background);
+	border-radius: 10px;
+	padding: 20px, 40px;
+	min-height: 400px;
+
+}
+
+.horoscope > h1 {
+	padding-top: 30px;
+}
+
 body {
 	/*color: magenta;*/
 }
 
 img {
-	border: 2px solid orange;
-	width: 50%;
+	/*border: 2px solid orange;*/
+	width: 100%;
 	/*animation: 10s color-shift infinite;*/
+}
+
+.horoscope h2 {
+	font-size: 1.5rem;
+	margin-bottom: 0px;
+}
+section + section h1 {
+	font-size: 3rem;
 }
 
 /*actions*/
